@@ -75,9 +75,9 @@ CREATE TABLE USUARIOS (
   ----------------------------------------------------
 
 INSERT INTO USUARIOS (ID_USUARIO, NOMBRE, APELLIDO, CORREO, CONTRASEÑA, FECHA_INSCRIPCION, ROL_ID) VALUES (1,'Kevin','Torres','kevin100@gmail.com','123456789',null,1);
-INSERT INTO USUARIOS (ID_USUARIO, NOMBRE, APELLIDO, CORREO, CONTRASEÑA, FECHA_INSCRIPCION, ROL_ID) VALUES (2,'Juan','Castaño','juan100@gmail.com','123456789',null,2);
+INSERT INTO USUARIOS (ID_USUARIO, NOMBRE, APELLIDO, CORREO, CONTRASEÑA, FECHA_INSCRIPCION, ROL_ID) VALUES (2,'Edwin','Upegui','edwin100@gmail.com','123456789',null,2);
 -------------------------------------------------------
-INSERT INTO ROL (ID_ROL, ROL) VALUES (1,'ADMINISTRADOR');}
+INSERT INTO ROL (ID_ROL, ROL) VALUES (1,'ADMINISTRADOR');
 INSERT INTO ROL (ID_ROL, ROL) VALUES (2,'USUARIO');
 
 ---------------------------------------------------------

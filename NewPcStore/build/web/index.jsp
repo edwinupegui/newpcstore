@@ -94,16 +94,17 @@
                                     <li class="dropdown"><a href="#">TIENDA<i class="fa fa-angle-down"></i></a> 
                                         <ul role="menu" class="sub-menu">
                                             <li><a href="computadores.jsp">Computadores</a></li>
-                                            <li><a href="accesorios.jsp">Accesorios</a></li> 
-                                            
+                                            <li><a href="accesorios.jsp">Accesorios</a></li>     
                                         </ul>
                                     
-                                    <li><script type="text/javascript">
+                                    <li>
+                                        <script type="text/javascript">
                                             function confirm_alert(node) {
                                             return confirm("Debes estar registrado para poder acceder al recomendador. \n \n \n Click en aceptar para registrarse.");
                                             }
                                             </script>
-                                            <a href="login.jsp" onclick="return confirm_alert(this);">RECOMENDADOR</a></li>
+                                            <a href="login.jsp" onclick="return confirm_alert(this);">RECOMENDADOR</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -118,7 +119,7 @@
             </div><!--/header-bottom-->
 	</header><!--/header-->
         
-        <section id="slider"><!--slider-->
+        <section id="slider">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -139,7 +140,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <img src="images/home/l4.PNG" class="girl img-responsive" alt="" />
-                                        <!--<img src="images/home/new.png"  class="pricing" alt="" />-->
+                                        <img src="images/home/new.png"  class="pricing" alt="" />
                                     </div>
                                 </div>
                                 <div class="item">
@@ -151,7 +152,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <img src="images/home/l8.PNG" class="girl img-responsive" alt="" />
-                                        <!--<img src="images/home/pricing.png"  class="pricing" alt="" />-->
+                                        <img src="images/home/pricing.png"  class="pricing" alt="" />
                                     </div>
                                 </div>
 
@@ -164,7 +165,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <img src="images/home/l14.png" class="girl img-responsive" alt="" />
-                                        <!--<img src="images/home/pricing.png"  class="pricing" alt="" />-->
+                                        <img src="images/home/pricing.png"  class="pricing" alt="" />
                                     </div>
                                 </div>
 
@@ -181,8 +182,7 @@
                     </div>
                 </div>
             </div>
-        </section><!--/slider-->
-
+        </section>
 	<section>
             <div class="container">
 		<div class="row">
