@@ -137,7 +137,8 @@ a#scrollUp i{
 }
 
 .header-middle .container .row {
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #fe980f;
+  border-radius: 10px;
   margin-left: 0;
   margin-right: 0;
   padding-bottom: 20px;
@@ -1427,8 +1428,8 @@ h2.title {
 
 #form {
   display: block;
-  margin-bottom: 185px;
-  margin-top: 185px;
+  margin-bottom: 100px;
+  margin-top: 100px;
   overflow: hidden;
 }
 
@@ -1451,7 +1452,7 @@ h2.title {
 
 .login-form form input, .signup-form form input {
   background: #F0F0E9;
-  border: medium none;
+  border: 1px solid #fe980f;
   color: #696763;
   display: block;
   font-family: 'Roboto', sans-serif;
