@@ -99,6 +99,9 @@
                                                 <li><a href="admininventario.jsp">Inventario</a></li>
                                                 <li><a href="pedido.jsp">Pedidos</a></li>
                                             </ul>   
+                                        </li>
+                                        
+                                        <li><a href="adminusuarios.jsp">Usuarios</a></li>
 
                                             <!---<li><a href="404.html">RECOMENDADOR</a></li>--->
                                     </ul>

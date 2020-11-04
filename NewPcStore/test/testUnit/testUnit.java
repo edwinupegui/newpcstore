@@ -5,6 +5,9 @@
  */
 package testUnit;
 
+
+import PruebasUnitarias.crear;
+import PruebasUnitarias.ingresoCrear;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -19,6 +22,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 import PruebasUnitarias.login;
+import PruebasUnitarias.menu;
+import PruebasUnitarias.listar;
 
 /**
  *
@@ -27,6 +32,10 @@ import PruebasUnitarias.login;
 public class testUnit {
     private static WebDriver driver = null;
     login ingreso;
+    menu menu;
+    listar listar;
+    ingresoCrear crear;
+    crear registrar;
     
     public testUnit() {
     }
@@ -61,9 +70,26 @@ public class testUnit {
     public void test() {
         String userName = "edwin100@gmail.com";
         String passWord = "123456789";
-        login ingreso = new login (driver);
+        ingreso = new login (driver);
         ingreso.loginApplication(userName, passWord);
-
-    
+        menu = new menu(driver);
+        menu.clickUsuarios();
+        listar = new listar (driver);
+        listar.clickListar();
+//        crear = new ingresoCrear (driver);
+//        crear.clickCrear();
+ 
     }
+//    public void test2() {
+//        int userId = 10;
+//        String userName = "pedro";
+//        String userLastName = "pruebas";
+//        String userMail = "pp@gmail.com";
+//        String passWord = "123456789";
+//        registrar = new crear (driver);
+//        registrar.clickCrear();
+// 
+//    }
+    
+    
 }
