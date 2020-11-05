@@ -9,7 +9,7 @@ public class listar {
     
     WebDriver driver;
     By menuListar = By.cssSelector("#cart_items > div > div.table-responsive.cart_info > form > input:nth-child(1)");
-    
+    By botonListar = By.cssSelector("#cart_items > div > div.table-responsive.cart_info > form > input:nth-child(1)");
    
     
     public listar(WebDriver driver){
@@ -25,6 +25,11 @@ public class listar {
             driver.findElement(menuListar).click();
 
     }    
+    public String validarListar(){
+         return driver.findElement(botonListar).getAttribute("value");
+    }
+    
+    
     public void menuListar(){
 
         //Click menu button

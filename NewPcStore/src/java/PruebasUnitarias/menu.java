@@ -9,6 +9,7 @@ public class menu {
     
     WebDriver driver;
     By menuUsuarios = By.cssSelector("#form-admin > ul > li:nth-child(3) > a");
+    By botonAdministrar = By.cssSelector("#form-admin > ul > li.dropdown > a");
     
    
     
@@ -24,7 +25,11 @@ public class menu {
 
             driver.findElement(menuUsuarios).click();
 
-    }    
+    } 
+    
+    public String validarAdministrar(){
+         return driver.findElement(botonAdministrar).getAttribute("value");
+    }
     public void menuUsuarios(){
 
         //Click menu button

@@ -93,7 +93,7 @@
                                     <ul class="nav navbar-nav collapse navbar-collapse">
                                         <li><a href="administrador.jsp" class="active">INICIO</a></li>
 
-                                        <li class="dropdown"><a href="#">ADMINISTRAR<i class="fa fa-angle-down"></i></a>
+                                        <li class="dropdown"><a href="#" value="ADMINISTRAR">ADMINISTRAR<i class="fa fa-angle-down"></i></a>
                                             <ul role="menu" class="sub-menu">
                                                 <li><a href="adminusuarios.jsp">Usuarios</a></li>
                                                 <li><a href="admininventario.jsp">Inventario</a></li>
@@ -101,7 +101,8 @@
                                             </ul>   
                                         </li>
                                         
-                                        <li><a href="adminusuarios.jsp">Usuarios</a></li>
+                                        <li><a href="adminusuarios.jsp">USUARIOS</a></li>
+                                        
 
                                             <!---<li><a href="404.html">RECOMENDADOR</a></li>--->
                                     </ul>

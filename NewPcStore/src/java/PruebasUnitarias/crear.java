@@ -15,7 +15,7 @@ public class crear {
     By userMail = By.name("txtCorreo");
     By password = By.name("txtContrasena");
     By rol = By.name("txtRol");
-    By signIn = By.name("accion");
+    By crear = By.cssSelector("#form > div > div > div > div > div > form > input[type=submit]:nth-child(11)");
 
     public crear (WebDriver driver){
         this.driver = driver;
@@ -51,19 +51,21 @@ public class crear {
 
     public void clickCrear(){
 
-            driver.findElement(signIn).click();
+            driver.findElement(crear).click();
 
     } 
     
-    public void loginApplication(String userName, String password){
+    public void crearUsuario(String userId, String userName, String userLastName, String userMail, String password, String rol){
         
         this.setUserId(userId);
         this.setUserName(userName);
         this.setUserLastName(userLastName);
         this.setUserMail(userMail);
         this.setPassword(password);
+        this.setRol(rol);
         this.clickCrear();        
     }
+
 
 
 
