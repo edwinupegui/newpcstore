@@ -60,7 +60,7 @@ public class Ingreso extends HttpServlet {
     }
 
     
-    private boolean ValidarUsuario(String ParametroEmail, String ParametroPassword) {
+    public boolean ValidarUsuario(String ParametroEmail, String ParametroPassword) {
         
         System.out.println("ingreso al metodo acceder");
         boolean validar = false;  
@@ -79,26 +79,21 @@ public class Ingreso extends HttpServlet {
             if(resultado.next() == true){
                 System.out.println("Ingreso exitoso");
                 validar = true;
-                
-                                
+                   
             }else{
                 System.out.println("USUARIO Y/O CONTRASEÑA INVALIDA");
-                validar = false;
-                
+                validar = false; 
             }
             resultado.close();
             con.close();
-          
         } catch (SQLException ex) {
             System.out.println("ocurrio un error al ingresar");
-            
         }
-        
         return validar;
     }
     
     
-    private boolean ValidarTipoUsuario(String ParametroEmail, String ParametroPassword) {
+    public boolean ValidarTipoUsuario(String ParametroEmail, String ParametroPassword) {
         
         System.out.println("ingreso al metodo tipo de usuario");
         boolean validar = false;  

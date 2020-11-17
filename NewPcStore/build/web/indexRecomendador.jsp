@@ -65,7 +65,7 @@
 				<ul class="nav navbar-nav">
                                     <!---<li><a href="404.jsp"><i class="fa fa-user"></i> Contactenos</a></li>--->
                                      <!--<li><a href="cart.jsp"><i class="fa fa-shopping-cart"></i> Carrito</a></li>-->
-                                    <li><a href="index.jsp"><img src="images/home/logout.png"/></a></li>
+                                    <li><a value="iconoSalida" href="index.jsp" ><img src="images/home/logout.png"/></a></li>
 				</ul>
                             </div>
 			</div>

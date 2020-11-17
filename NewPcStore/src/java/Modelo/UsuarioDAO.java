@@ -212,6 +212,5 @@ public class UsuarioDAO {
             
             return resp;
     }
-    
-        
+   
 }

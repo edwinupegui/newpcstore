@@ -47,11 +47,6 @@ public class login {
 
         this.clickLogin();         // paso 4
     }
-
-
-
-
-
-    
+ 
     
 }

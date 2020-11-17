@@ -65,49 +65,43 @@ public class testUnit {
        // driver.quit()
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
+    
     @Test
     public void test() {
+        
+        // pruebas ingreso de los usuarios
         String userName = "edwin100@gmail.com";
         String passWord = "123456789";
         ingreso = new login (driver);
         ingreso.loginApplication(userName, passWord);
         
-        
+        // pruebas ingreso al menu de administracion de usuarios
         menu = new menu(driver);
         assertEquals("Validar botón administrar", "ADMINISTRAR", menu.validarAdministrar());
         menu.clickUsuarios();
         
-        
+        // pruebas ingreso de listar los usuarios registrados
         listar = new listar (driver);
         assertEquals("Validar botón listar", "Listar", listar.validarListar());
         listar.clickListar();
         
-        
+        // pruebas ingreso de ingreso a la opción de crear
         crear = new ingresoCrear (driver);
         crear.clickCrear();
         
-
-        String userId = "12";
-        String userNamaN = "camila";
-        String userLastName = "rua";
-        String userMail = "cr@gmail.com";
+        // prueba crear usuario
+        String userId = "15";
+        String userNamaN = "pedro";
+        String userLastName = "sanchez";
+        String userMail = "ps@gmail.com";
         String password = "123456789";
         String rol = "2";
         registrar = new crear (driver);
         registrar.crearUsuario(userId, userNamaN, userLastName, userMail, password, rol);
         
         usuarios = new usuarios (driver);
-        assertEquals("Validar usuario creado", "camila", usuarios.usuarioCreado());
-        
-       
+        assertEquals("Validar usuario creado", "Kevin", usuarios.usuarioCreado());
+             
    }
-
-
-    
-    ///uso de varios @test
-    
-    
+   
 }

@@ -6,11 +6,11 @@ import org.openqa.selenium.WebDriver;
  *
  * @author edwin
  */
-public class usuarios {
+public class validaRegistro {
     WebDriver driver;
-    By usuario = By.cssSelector("#cart_items > div > div.table-responsive.cart_info > table > tbody > tr:nth-child(1) > td:nth-child(2)");
+    By usuario = By.cssSelector("#header > div.header-middle > div > div > div.col-sm-8 > div > ul > li > a");
     
-    public usuarios(WebDriver driver){
+    public validaRegistro(WebDriver driver){
 
         this.driver = driver;
 
@@ -20,6 +20,5 @@ public class usuarios {
     public String usuarioCreado(){
          return driver.findElement(usuario).getAttribute("value");
     }
-
-         
+    
 }
