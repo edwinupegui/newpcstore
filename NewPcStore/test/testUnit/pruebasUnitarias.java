@@ -84,6 +84,5 @@ public class pruebasUnitarias {
         boolean esperado = false;
         boolean resultado = userCliente.ValidarTipoUsuario(Email, Password);
         assertEquals(esperado, resultado);
-  
     }
 }

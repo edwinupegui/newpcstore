@@ -60,9 +60,9 @@ public class testRegistro {
         
         // pruebas registro de los usuarios
 
-        String userNama = "camila";
-        String userLastName = "gil";
-        String userMail = "cg@gmail.com";
+        String userNama = "pedro";
+        String userLastName = "pruebas";
+        String userMail = "pp@gmail.com";
         String password = "123456789";
         String ConfPassword = "123456789";
         registrar = new registro (driver);
@@ -72,7 +72,5 @@ public class testRegistro {
         validar = new validaRegistro (driver);
         assertEquals("Validar usuario creado", "iconoSalida", validar.usuarioCreado());
         
-        
-      
    }
 }
