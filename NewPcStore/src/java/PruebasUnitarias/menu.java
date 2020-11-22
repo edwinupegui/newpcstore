@@ -8,8 +8,12 @@ import org.openqa.selenium.WebDriver;
 public class menu {
     
     WebDriver driver;
-    By menuUsuarios = By.cssSelector("#form-admin > ul > li:nth-child(3) > a");
-    By botonAdministrar = By.cssSelector("#form-admin > ul > li.dropdown > a");
+    By menuUsuarios = By.cssSelector("#form-admin > ul > li:nth-child(2) > a");
+    By botonUsuarios = By.cssSelector("#form-admin > ul > li:nth-child(2) > a");
+    By menuInventarios = By.cssSelector("#form-admin > ul > li:nth-child(3) > a");
+    By botonInventario = By.cssSelector("#form-admin > ul > li:nth-child(3) > a");
+    By menuRecomendador = By.cssSelector("#header > div.header-bottom > div > div > div.col-sm-9 > div.mainmenu.pull-left > ul > li:nth-child(3) > a");
+    By botonRecomendador = By.cssSelector("#header > div.header-bottom > div > div > div.col-sm-9 > div.mainmenu.pull-left > ul > li:nth-child(3) > a");
     
    
     
@@ -24,17 +28,39 @@ public class menu {
     public void clickUsuarios(){
 
             driver.findElement(menuUsuarios).click();
+    } 
+    public void clickInventario(){
 
+            driver.findElement(menuInventarios).click();
+    } 
+    public void clickRecomendador(){
+
+            driver.findElement(menuRecomendador).click();
     } 
     
-    public String validarAdministrar(){
-         return driver.findElement(botonAdministrar).getAttribute("value");
+    public String validarUsuarios(){
+         return driver.findElement(botonUsuarios).getAttribute("value");
     }
+    
+    public String validarInventarios(){
+         return driver.findElement(botonInventario).getAttribute("value");
+    }
+    
+    public String validarRecomedador(){
+         return driver.findElement(botonRecomendador).getAttribute("value");
+    }
+    
     public void menuUsuarios(){
 
-        //Click menu button
-
         this.clickUsuarios();          
+    }
+    public void menuInventario(){
+
+        this.clickInventario();          
+    }
+    public void menuRecomendador(){
+
+        this.clickRecomendador();          
     }
     
     

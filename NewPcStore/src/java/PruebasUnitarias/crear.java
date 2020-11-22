@@ -65,14 +65,5 @@ public class crear {
         this.setRol(rol);
         this.clickCrear();        
     }
-
-
-
-
-
-
-
-
-    
-    
+ 
 }

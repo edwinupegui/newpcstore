@@ -23,8 +23,8 @@ public class listar {
     public void clickListar(){
 
             driver.findElement(menuListar).click();
-
-    }    
+    }   
+    
     public String validarListar(){
          return driver.findElement(botonListar).getAttribute("value");
     }
@@ -36,6 +36,7 @@ public class listar {
 
         this.clickListar();          
     }
+    
     
     
 }

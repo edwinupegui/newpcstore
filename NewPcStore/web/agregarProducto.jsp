@@ -59,7 +59,7 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="logo pull-left">
-                                <a href="index.jsp"><img src="images/home/logo.png" alt="logo de la tienda NewPCStore" /></a>
+                                <a href="administrador.jsp"><img src="images/home/logo.png" alt="logo de la tienda NewPCStore" /></a>
                             </div>
 
                         </div>

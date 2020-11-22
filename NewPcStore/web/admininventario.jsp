@@ -156,7 +156,7 @@
                             <c:forEach var="dato" items="${datos}">
                                 <tr> 
                                     <td>${dato.id_producto}</td>
-                                    <td>${dato.getReferencia()}</td>
+                                    <td value="referencia">${dato.getReferencia()}</td>
                                     <td>${dato.getSerial()}</td>
                                     <td>${dato.getPerfil()}</td>
                                     <td>${dato.getPrecio()}</td>

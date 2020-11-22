@@ -77,7 +77,7 @@ public class testUnit {
         
         // pruebas ingreso al menu de administracion de usuarios
         menu = new menu(driver);
-        assertEquals("Validar botón administrar", "ADMINISTRAR", menu.validarAdministrar());
+        assertEquals("Validar botón administrar", "USUARIOS", menu.validarUsuarios());
         menu.clickUsuarios();
         
         // pruebas ingreso de listar los usuarios registrados
@@ -90,7 +90,7 @@ public class testUnit {
         crear.clickCrear();
         
         // prueba crear usuario
-        String userId = "15";
+        String userId = "47";
         String userNamaN = "pedro";
         String userLastName = "sanchez";
         String userMail = "ps@gmail.com";
@@ -100,7 +100,7 @@ public class testUnit {
         registrar.crearUsuario(userId, userNamaN, userLastName, userMail, password, rol);
         
         usuarios = new usuarios (driver);
-        assertEquals("Validar usuario creado", "Kevin", usuarios.usuarioCreado());
+        assertEquals("Validar usuario creado", "nombre", usuarios.usuarioCreado());
              
    }
    

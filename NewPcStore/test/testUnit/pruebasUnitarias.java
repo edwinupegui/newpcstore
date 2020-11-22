@@ -5,16 +5,22 @@
  */
 package testUnit;
 
+import Modelo.Recomendacion;
+import Modelo.RecomendacionDAO;
 import Modelo.Usuario;
 import servidorescontrolador.Ingreso;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import static javafx.scene.input.KeyCode.U;
 import javax.servlet.http.HttpServlet;
+import static javax.swing.text.html.HTML.Tag.U;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
 
 /**
  *
@@ -24,6 +30,8 @@ public class pruebasUnitarias {
     Ingreso userIng;
     Ingreso userAdmin;
     Ingreso userCliente;
+    RecomendacionDAO recomendacion1;
+    RecomendacionDAO recomendacion2;
     
     
     public pruebasUnitarias() {
@@ -83,6 +91,22 @@ public class pruebasUnitarias {
         
         boolean esperado = false;
         boolean resultado = userCliente.ValidarTipoUsuario(Email, Password);
+        assertEquals(esperado, resultado);
+    }
+    @Test
+    public void validacionRecomendador() {
+        
+        recomendacion1 = new RecomendacionDAO();
+        recomendacion2 = new RecomendacionDAO();
+        
+        
+        String perfilCliente = "EMPRESARIO";
+        String tipoPc = "PORTATIL";
+        String perfilPc = "CORPORATIVO";
+        
+        
+        ArrayList esperado = recomendacion1.listarRecomendacion(perfilCliente, tipoPc, perfilPc);
+        ArrayList resultado = recomendacion2.listarRecomendacion(perfilCliente, tipoPc, perfilPc);
         assertEquals(esperado, resultado);
     }
 }

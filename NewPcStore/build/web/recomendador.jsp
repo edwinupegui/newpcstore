@@ -124,7 +124,7 @@
                                 <h4>PERFIL CLIENTE</h4>
                                     <input list="clientes" name="cliente" id="cliente">
                                     <datalist id="clientes">
-                                        <option value="EMPRESARIO">
+                                        <option name="EMPRESARIO" value="EMPRESARIO">
                                         <option value="JUGADOR">
                                         <option value="ESTUDIANTE">
                                         <option value="DISEÑADOR">
@@ -182,7 +182,7 @@
                     <%ArrayList<Recomendacion> datos = (ArrayList<Recomendacion>) request.getAttribute("datos");%>
                     <c:forEach var="dato" items="${datos}">
                         <tr> 
-                            <td>${dato.modelo}</td>
+                            <td value="resultadoRecomendacion">${dato.modelo}</td>
                             <td>${dato.getPerfil_equipo()}</td>
                             <td>${dato.getTipo_equipo()}</td>
                             <td>${dato.getPerfil_cliente()}</td>

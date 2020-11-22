@@ -11,9 +11,7 @@ public class usuarios {
     By usuario = By.cssSelector("#cart_items > div > div.table-responsive.cart_info > table > tbody > tr:nth-child(1) > td:nth-child(2)");
     
     public usuarios(WebDriver driver){
-
         this.driver = driver;
-
     }
 
    

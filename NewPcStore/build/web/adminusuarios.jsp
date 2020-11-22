@@ -159,7 +159,7 @@
                             <c:forEach var="dato" items="${datos}">
                                 <tr> 
                                     <td>${dato.id_usuario}</td>
-                                    <td>${dato.getNombre()}</td>
+                                    <td value="nombre">${dato.getNombre()}</td>
                                     <td>${dato.getApellido()}</td>
                                     <td>${dato.getCorreo()}</td>
                                     <td>${dato.getContrasena()}</td>

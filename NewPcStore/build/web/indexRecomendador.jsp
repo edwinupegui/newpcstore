@@ -95,7 +95,7 @@
                                             
                                         </ul>
                                     
-                                    <li><a href="recomendador.jsp">RECOMENDADOR</a></li>
+                                    <li><a href="recomendador.jsp" value="RECOMENDADOR">RECOMENDADOR</a></li>
                                 </ul>
                             </div>
                         </div>
