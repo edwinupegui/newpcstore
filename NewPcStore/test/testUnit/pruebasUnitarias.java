@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package testUnit;
 
 import Modelo.Recomendacion;
@@ -14,6 +10,7 @@ import java.util.ArrayList;
 import static javafx.scene.input.KeyCode.U;
 import javax.servlet.http.HttpServlet;
 import static javax.swing.text.html.HTML.Tag.U;
+import org.apache.http.util.TextUtils;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -30,8 +27,7 @@ public class pruebasUnitarias {
     Ingreso userIng;
     Ingreso userAdmin;
     Ingreso userCliente;
-    RecomendacionDAO recomendacion1;
-    RecomendacionDAO recomendacion2;
+    RecomendacionDAO recomendacion;
     
     
     public pruebasUnitarias() {
@@ -96,17 +92,18 @@ public class pruebasUnitarias {
     @Test
     public void validacionRecomendador() {
         
-        recomendacion1 = new RecomendacionDAO();
-        recomendacion2 = new RecomendacionDAO();
+        recomendacion = new RecomendacionDAO();
         
         
         String perfilCliente = "EMPRESARIO";
         String tipoPc = "PORTATIL";
         String perfilPc = "CORPORATIVO";
-        
-        
-        ArrayList esperado = recomendacion1.listarRecomendacion(perfilCliente, tipoPc, perfilPc);
-        ArrayList resultado = recomendacion2.listarRecomendacion(perfilCliente, tipoPc, perfilPc);
-        assertEquals(esperado, resultado);
+
+        ArrayList lista = recomendacion.listarRecomendacion(perfilCliente, tipoPc, perfilPc);
+        String esperado = lista.get(1).toString();
+//        assertEquals(esperado, resultado);
+        assertTrue(esperado.contains("CORPORATIVO"));
+        System.out.println("esperado es:" + esperado);
+   
     }
 }

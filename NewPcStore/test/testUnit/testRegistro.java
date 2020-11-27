@@ -60,9 +60,9 @@ public class testRegistro {
         
         // pruebas registro de los usuarios
 
-        String userNama = "pedro";
-        String userLastName = "pruebas";
-        String userMail = "pp@gmail.com";
+        String userNama = "olga";
+        String userLastName = "luz";
+        String userMail = "cl@gmail.com";
         String password = "123456789";
         String ConfPassword = "123456789";
         registrar = new registro (driver);

@@ -92,7 +92,7 @@ public class testProductos {
         crear.clickCrear();
         
         // prueba crear usuario
-        String userId = "53";
+        String userId = "58";
         String referencia = "fx4323";
         String serial = "HDYS483998";
         String perfil = "Corporativo";
