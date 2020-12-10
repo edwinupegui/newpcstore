@@ -90,12 +90,12 @@ public class testUnit {
         crear.clickCrear();
         
         // prueba crear usuario
-        String userId = "50";
-        String userNamaN = "santiago";
-        String userLastName = "gago";
-        String userMail = "sg@gmail.com";
+        String userId = "82";
+        String userNamaN = "Manuela";
+        String userLastName = "yepes";
+        String userMail = "my@gmail.com";
         String password = "123456789";
-        String rol = "2";
+        String rol = "1";
         registrar = new crear (driver);
         registrar.crearUsuario(userId, userNamaN, userLastName, userMail, password, rol);
         
